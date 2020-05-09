@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFClient", "WPFClient\WPFClient.csproj", "{E62BCF72-B94E-4C31-8426-7681FF344A7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterLib", "ConverterLib\ConverterLib.csproj", "{1DDA7AEF-A073-436A-AF97-8081B67115D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConverterLib", "ConverterLib\ConverterLib.csproj", "{1DDA7AEF-A073-436A-AF97-8081B67115D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestConverterLib", "UnitTestConverterLib\UnitTestConverterLib.csproj", "{290D544F-6124-4C17-832B-C90AD022FC07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1DDA7AEF-A073-436A-AF97-8081B67115D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DDA7AEF-A073-436A-AF97-8081B67115D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DDA7AEF-A073-436A-AF97-8081B67115D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{290D544F-6124-4C17-832B-C90AD022FC07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{290D544F-6124-4C17-832B-C90AD022FC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{290D544F-6124-4C17-832B-C90AD022FC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{290D544F-6124-4C17-832B-C90AD022FC07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
