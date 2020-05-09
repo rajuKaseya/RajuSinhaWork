@@ -7,7 +7,7 @@ namespace ConverterLib
    internal class Utility
     {
 
-        internal static string GetWordFromNumber(int number)
+        private static string GetWordFromNumber(int number)
         {
             switch (number)
             {
@@ -70,5 +70,23 @@ namespace ConverterLib
             }
         }
 
+        internal static string ParseNumber(int number)
+        {
+            if (number < 21 || number == 20 || number == 30 || number == 40 || number == 50 || number == 60 || number == 70 || number == 80 || number == 90)
+            {
+                return GetWordFromNumber(number);
+            }
+            else
+            {
+                string temp;
+                int remainder = number / 10;
+
+                temp = GetWordFromNumber(remainder * 10);
+                int module = number % 10;
+
+                temp = temp + " " + GetWordFromNumber(module);
+                return temp;
+            }
+        }
     }
 }
