@@ -24,5 +24,15 @@ namespace WPFClient
         {
             InitializeComponent();
         }
+
+        private void Button_Click_Generate(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Not Implemented");
+        }
+
+        private void Button_Click_Convert(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Not Implemented");
+        }
     }
 }

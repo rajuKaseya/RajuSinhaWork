@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:WPFClient"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+   
+        <StackPanel>
+            <TextBlock Name="Hint" Height="30" Width="300" Text="Input Value Here between 1 to 999999999" Margin="5,50,5,5"></TextBlock>
+            <TextBox Name="Input" Height="30" Width="300"></TextBox>
+            <Button Click="Button_Click_Convert"  Name="BtnConvert" Height="30" Width="100" Margin="5,5,5,5">Convert to Words</Button>
+            <Button Click="Button_Click_Generate" Height="30" Width="100" Margin="5,5,5,5">Generate Random Number</Button>
+        </StackPanel>
 </Window>
+
+  
