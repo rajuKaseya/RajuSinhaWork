@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ConverterLib;
 
 namespace UnitTestConverterLib
 {
@@ -9,9 +10,11 @@ namespace UnitTestConverterLib
         [TestMethod]
         public void TestConvert()
         {
-            string Actual = "";
-            string expected = ",";
-            Assert.AreEqual(expected,Actual);
+            IConverter converter = Factory.GetConverter();
+            string actual = converter.Convert(453256378);
+            string expected = "Fourty Five Crore, Thirty Two lac, Fifty Six Thousand, Three hundred and Seventy Eight";
+            Assert.AreEqual(expected, actual);
         }
     }
 }
+
