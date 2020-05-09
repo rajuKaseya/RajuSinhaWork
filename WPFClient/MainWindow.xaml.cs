@@ -43,11 +43,11 @@ namespace WPFClient
 
         private void Button_Click_Convert(object sender, RoutedEventArgs e)
         {
-            int number = Convert.ToInt32(Input.Text);
-
+            int number;
+            Int32.TryParse(Input.Text,out number);
             if(number<1 || number>999999999)
             {
-                MessageBox.Show("Input Not in range.");
+                MessageBox.Show("Input Not in range/correct format.");
             }
             else
             {

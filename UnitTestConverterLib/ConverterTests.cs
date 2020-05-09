@@ -12,7 +12,7 @@ namespace UnitTestConverterLib
         {
             IConverter converter = Factory.GetConverter();
             string actual = converter.Convert(453256378);
-            string expected = "Fourty Five Crore, Thirty Two lac, Fifty Six Thousand, Three hundred and Seventy Eight";
+            string expected = "Fourty Five Crore,Thirty Two Lac,Fifty Six Thousand,Three Hundred And Seventy Eight";
             Assert.AreEqual(expected, actual);
         }
     }

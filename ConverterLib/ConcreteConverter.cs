@@ -20,12 +20,12 @@ namespace ConverterLib
             }
             if (temp > 999)
             {
-                result = result + Utility.ParseNumber(System.Convert.ToInt32(temp / 1000)) + " Thousands,";
+                result = result + Utility.ParseNumber(System.Convert.ToInt32(temp / 1000)) + " Thousand,";
                 temp = temp - (temp / 1000) * 1000;
             }
             if (temp > 99)
             {
-                result = result + Utility.ParseNumber(System.Convert.ToInt32(temp / 100)) + " Hundreds,";
+                result = result + Utility.ParseNumber(System.Convert.ToInt32(temp / 100)) + " Hundred,";
                 temp = temp - (temp / 100) * 100;
             }
             if (temp > 0)
@@ -34,10 +34,10 @@ namespace ConverterLib
                 {
                     result = result.Remove(result.Length - 1);
                 }
-                result = result + " and " + Utility.ParseNumber(System.Convert.ToInt32(temp));
+                result = result + " And " + Utility.ParseNumber(System.Convert.ToInt32(temp));
 
             }
-            if (result.Length > 0 && result.StartsWith(" and"))
+            if (result.Length > 0 && result.StartsWith(" And"))
             {
                 result = result.Remove(0, 4);
             }
