@@ -51,7 +51,7 @@ namespace WPFClient
             }
             else
             {
-                IConverter converter = Factory.GetConverter();
+                IConverter converter = Factory.GetConverter();//Call the Factory method. It will be loosely coupled.
                 MessageBox.Show(converter.Convert(number));
             }
         }
