@@ -27,12 +27,31 @@ namespace WPFClient
 
         private void Button_Click_Generate(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            Random rand = new Random();
+            int number = rand.Next();
+            if(number>999999999)
+            {
+                number = number / 10;
+                Input.Text = number.ToString();
+            }
+            else
+            {
+                Input.Text = number.ToString();
+            }
         }
 
         private void Button_Click_Convert(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Not Implemented");
+            int number = Convert.ToInt32(Input.Text);
+
+            if(number<1 || number>999999999)
+            {
+                MessageBox.Show("Input Not in range.");
+            }
+            else
+            {
+                MessageBox.Show("Result:");
+            }
         }
     }
 }
